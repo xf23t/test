@@ -8,7 +8,7 @@ var formidable = require('formidable');
 var fs = require('fs');
 var fse = require('fs-extra');
 var pathUtil = require('path');
-var date_utils = require('date-utils');
+//var date_utils = require('date-utils');
 //var easyimg = require('easyimage');
 var router = express.Router();
 //var pool = require('./dbConnection');
@@ -89,6 +89,7 @@ router.post('/', function (req, res, next) {
 });
 
 
+module.exports = router;
 
 /*               console.log('error:'+err);
                res.statusCode = 404;
